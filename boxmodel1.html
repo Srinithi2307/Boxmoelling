@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 60px;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #222;
+            margin-bottom: 25px;
+        }
+
+        .products {
+            display: flex;
+            gap: 25px;
+        }
+
+        .product-card {
+            width: 220px;
+            border: 1px solid #e5e5e5;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .image-box {
+            height: 185px;
+            background-color: #f8ddb0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+
+        .discount {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #f5a623;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 1;
+        }
+
+        .product-name {
+            height: 50px;
+            padding: 15px 8px 0;
+            font-size: 13px;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .price {
+            padding: 15px 8px;
+            color: #e9a21a;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .old-price {
+            color: #999;
+            font-size: 12px;
+            text-decoration: line-through;
+            margin-left: 8px;
+        }
+
+        .cart-area {
+            display: flex;
+            gap: 10px;
+            padding: 10px 8px;
+        }
+
+        .cart-icon {
+            width: 45px;
+            height: 40px;
+            border: none;
+            background-color: #eef6ff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .cart-button {
+            flex: 1;
+            border: none;
+            background-color: #eef6ff;
+            color: #1674d1;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .cart-button:hover,
+        .cart-icon:hover {
+            background-color: #d9ebff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Featured Products</h2>
+
+    <div class="products">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+
+            <div class="image-box">
+                <span class="discount">-20%</span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=500&q=80"
+                    alt="Gaming Computer">
+            </div>
+
+            <div class="product-name">
+                Cougar DarkBlader-G ARGB Full Tower Case
+            </div>
+
+            <div class="price">
+                $940
+                <span class="old-price">$1199</span>
+            </div>
+
+            <div class="cart-area">
+                <button class="cart-icon">🛒</button>
+                <button class="cart-button">Add to cart</button>
+            </div>
+
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="product-card">
+
+            <div class="image-box">
+                <span class="discount">-10%</span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80"
+                    alt="Laptop">
+            </div>
+
+            <div class="product-name">
+                HP Envy i3 Laptop - 10th Gen G27
+            </div>
+
+            <div class="price">
+                $1200
+                <span class="old-price">$1500</span>
+            </div>
+
+            <div class="cart-area">
+                <button class="cart-icon">🛒</button>
+                <button class="cart-button">Add to cart</button>
+            </div>
+
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="product-card">
+
+            <div class="image-box">
+
+                <img
+                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=500&q=80"
+                    alt="Mechanical Keyboard">
+            </div>
+
+            <div class="product-name">
+                Logitech Mechanical Keyboard
+            </div>
+
+            <div class="price">
+                $200
+            </div>
+
+            <div class="cart-area">
+                <button class="cart-icon">🛒</button>
+                <button class="cart-button">Add to cart</button>
+            </div>
+
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="product-card">
+
+            <div class="image-box">
+                <span class="discount">-15%</span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500&q=80"
+                    alt="Gaming PC">
+            </div>
+
+            <div class="product-name">
+                Cougar Panzer EVO RGB Gaming Case
+            </div>
+
+            <div class="price">
+                $1999
+                <span class="old-price">$2399</span>
+            </div>
+
+            <div class="cart-area">
+                <button class="cart-icon">🛒</button>
+                <button class="cart-button">Add to cart</button>
+            </div>
+
+        </div>
+    
+    </div>
+</body>
+</html>
